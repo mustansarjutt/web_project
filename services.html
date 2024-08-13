@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Services</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(photos/pexels-pixabay-326055.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .section{
+            width: 70%;
+            height: fit-content;
+            margin: 70px auto 30px auto;
+        }
+        .main{
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .main .box{
+            text-align: center;
+            height: max-content;
+            width: 33%;
+            background-color: #717b7b;
+            padding: 15px;
+            box-shadow: 3px 3px 4px black;
+        }
+        .main .box i{
+            font-size: 48px;
+        }
+        .main .box .text{
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .main .box:hover{
+            background-color: #e7e71d;
+        }
+        .form{
+            margin-top: 10px;
+        }
+        .form a{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .section h2{
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: bolder;
+        }
+        @media (max-width: 930px){
+            .section h2{
+                font-size: 25px;
+                text-align: center;
+                background-color: #1b1250;
+                padding: 7px;
+            }
+            .section{
+                width: 90%;
+                margin: 50px auto 20px auto;
+            }
+            .main{
+                padding: 10px;
+            }
+            .main .box{
+                width: 40%;
+                height: auto;
+            }
+            .main .box i{
+                font-size: 30px;
+            }
+            .main .box .text{
+                font-size: 12px;
+            }
+            .form a{
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Services</h2>
+        <hr>
+        <br>
+        <br>
+        <div class="main">
+            <div class="box">
+                <i class="fa fa-file-code-o" style="color:#0d2b4b"></i>
+                <div class="text">Web-Developement</div>
+            </div>
+            <div class="box">
+                <i class="fa fa-film" style="color:#0d2b4b"></i>
+                <div class="text">Video Editing</div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="box">
+                <i class="fa fa-code" style="color:#0d2b4b"></i>
+                <div class="text">React Js</div>
+            </div>
+            <div class="box">
+                <i class="fa fa-area-chart" style="color:#0d2b4b"></i>
+                <div class="text">Graphics Designing</div>
+            </div>
+        </div>
+        <div class="form">
+            <a href="#">Contact me for these Services</a>
+        </div>
+    </div>
+</body>
+</html>

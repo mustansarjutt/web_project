@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(photos/pexels-jay-pizzle-3802510.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+}
+nav .logo{
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 80px;
+    user-select: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    line-height: 80px;
+    padding: 0 30px;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover{
+    border: 2px black solid;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+nav .icon{
+    line-height: 80px;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 210px);
+}
+.intro{
+    padding: 30px 70px;
+}
+.intro h2{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+    width: 30%;
+    margin: auto;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    padding: 20px 40px;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 20px;
+}
+.footer{
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #dbd9d9;
+}
+.footer .links li{
+    list-style: none;
+    text-align: center;
+}
+.footer .text{
+    color: #000;
+    letter-spacing: 1.1px;
+    font-size: 17px;
+    user-select: none;
+}
+.footer .links2 li{
+    list-style: none;
+    color: #000;
+    text-align: center;
+    margin-top: 5px;
+    letter-spacing: 1.1px;
+    font-size: 17px;
+    user-select: none;
+}
+.footer .links2 li a{
+    text-decoration: none;
+    color: #000;
+}
+.footer .links2 li a:hover{
+    border: 2px solid #000;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+.fb{
+    color: #4267B2;
+    font-size: 20px;
+}
+.insta{
+    background: -webkit-linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+@media (max-width: 850px){
+    nav{
+        justify-content: space-between;
+    }
+    nav .icon{
+        display: block;
+        margin-right: 25px;
+    }
+    nav .logo{
+        font-size: 30px;
+        padding: 0 30px;
+    }
+    nav ul{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        background-color: #b6aeae;
+        transition: all 0.3s;
+    }
+    .fb, .insta{
+        font-size: 15px;
+    }
+    nav ul li{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 800px){
+    .intro h2{
+        width: 50%;
+    }
+}
+@media (max-width: 799px) and (min-width: 500px){
+    .intro{
+        padding: 20px 40px;
+    }
+    .intro h2{
+        width: 80%;
+    }
+    .footer .text, .footer .links2 li{
+        letter-spacing: 0.7px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 499px){
+    body{
+        background: linear-gradient(#c6ffdd, #fbd786, #f7797d);
+    }
+    .intro{
+        padding: 15px 20px;
+    }
+    .intro h2{
+        width: 90%;
+        font-size: 25px;
+        padding: 20px 10px;
+        color: #000;
+        backdrop-filter: none;
+    }
+    .footer .text, .footer .links2 li{
+        letter-spacing: 0.7px;
+        font-size: 12px;
+    }
+    .footer{
+        height: 90px;
+        background-color: #758d90;
+    }
+    .main-section{
+        height: calc(100vh - 170px);
+    }
+}

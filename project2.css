@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav1{
+    background-color: #0a0e18;
+    color: #fff;
+}
+.nav1 h2{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.myDiv{
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#text{
+    padding: 7px;
+    width: 40%;
+}
+#text:focus{
+    border: 5px rgb(119, 66, 66) solid;
+}
+#myBtn{
+    background-color: rgb(104, 92, 68);
+    color: wheat;
+}
+#myBtn:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    transition: 0.7s;
+}
+.main{
+    display: flex;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    border: 2px black solid;
+}
+.heading3{
+    flex-grow: 5;
+    margin: 5px;
+    padding: 7px;
+}
+.editBtn, .removeBtn{
+    background-color: orange;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 5px;
+    padding: 7px;
+    font-size: 15px;
+}
+@media screen and (max-width: 700px){
+    .link, .last{
+        display: flex;
+    }
+    .last{
+        float: none;
+    }
+    #search1{
+        width: 100px;
+    }
+    #text{
+        width: 70%;
+    }
+    .main{
+        width: fit-content;
+        overflow: scroll;
+    }
+}

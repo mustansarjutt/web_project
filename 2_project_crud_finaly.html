@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project2.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <h2>Creat - Remove - Update - Delete</h2>
+        </nav>
+    </header>
+    <form>
+        <div class="myDiv">
+            <input type="text" id="text" placeholder="Enter text here">
+            <button id="myBtn">Add</button>
+        </div>
+    </form>
+    <div id="apeend">
+        <!-- <div class="main">
+            <h3 class="heading3">Chapter 1</h3>
+            <button class="editBtn" onclick="editText(this)">Edit</button>
+            <button class="removeBtn" style="background-color: red;" onclick="removeText(this)">Remove</button>
+        </div> -->
+    </div>    
+    <script>
+        let btn = document.getElementById('myBtn')
+        btn.addEventListener('click', addtext)
+        function addtext(e){
+            e.preventDefault()
+            let input = btn.previousElementSibling.value
+            let newDiv = document.createElement('div')
+            newDiv.classList.add('main')
+            newDiv.innerHTML = `<h3 class="heading3">${input}</h3>
+            <button class="editBtn" onclick="editText(this)">Edit</button>
+            <button class="removeBtn" style="background-color: red;" onclick="removeText(this)">Remove</button>`
+            apeend.appendChild(newDiv)
+        }
+        function removeText(elements){
+            elements.parentElement.remove()
+        }
+        function editText(currentElement){
+            if(currentElement.textContent == 'Done'){
+                currentElement.textContent = 'Edit'
+                let currentChapterName = currentElement.previousElementSibling.value
+                let currentHeading = document.createElement('h3')
+                currentHeading.className = 'heading3'
+                currentHeading.textContent = currentChapterName
+                currentElement.parentElement.replaceChild(currentHeading, currentElement.previousElementSibling)
+            } else{
+                currentElement.textContent = 'Done'
+                console.log(currentElement.previousElementSibling)
+                let currentChapterName = currentElement.previousElementSibling.textContent
+                console.log(currentChapterName)
+                let currInput = document.createElement('input')
+                currInput.type = 'text'
+                currInput.placeholder = 'Enter text'
+                currInput.className = 'heading3'
+                currInput.value = currentChapterName
+                //document.querySelector('.main').children[0].replaceWith(currInput)
+                currentElement.parentElement.replaceChild(currInput, currentElement.previousElementSibling)
+            }
+        }
+    </script>
+</body>
+</html>

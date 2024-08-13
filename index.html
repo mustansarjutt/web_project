@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJutt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <label class="logo">MJutt</label>
+            <ul id="ulTag">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact-form.php">Contact Us</a></li>
+            </ul>
+            <span class="icon">
+                <i class="fa fa-bars" id="menuBtn"></i>
+            </span>
+        </nav>
+    </header>
+    <main class="main-section">
+        <div class="intro">
+            <h2>Welcome to My Website. Here many HTML, CSS & Js Projects are available for begineers</h2>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul class="links">
+                <li class="text">Socil Links</li>
+                <li><a href="https://www.facebook.com/mustansar.gill.58?mibextid=ZbWKwL" target="_blank" class="fb"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/neutrboy_88?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="insta"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <ul class="links2">
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li>All rights are reserverd</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        let menuButton = document.getElementById('menuBtn');
+        let list = document.getElementById('ulTag');
+        let mainSec = document.querySelector('.main-section');
+        let footer = document.querySelector('.footer');
+        
+        list.style.left = "-100%";
+        
+        menuButton.addEventListener('click', ()=>{
+            if(list.style.left === "-100%"){
+                list.style.left = "0";
+                mainSec.style.display = 'none';
+                footer.style.display = 'none';
+                document.body.style.background = "#b6aeae";
+            }
+            else{
+                list.style.left = "-100%";
+                mainSec.style.display = '';
+                footer.style.display = '';
+                document.body.style.background = "";
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3eded;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 0;
+}
+.logo{
+    font-size: 35px;
+    padding: 0 20px;
+    user-select: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #514a4a;
+    cursor: pointer;
+}
+.icon{
+    font-size: 25px;
+    color: #fff;
+    display: none;
+}
+main{
+    background-color: rgb(173, 166, 166);
+    padding: 5px;
+}
+main h2{
+    text-align: center;
+    margin-top: 10px;
+    background-color: #173557;
+    color: #fff;
+    padding: 10px 0;
+    user-select: none;
+}
+form{
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ccc594;
+    padding: 10px;
+}
+.input-area label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+.input-area input{
+    margin-top: 10px;
+    width: 100%;
+    padding: 7px 3px;
+}
+.btn{
+    display: flex;
+    justify-content: end;
+}
+form button{
+    color: #fff;
+    background-color: #000000;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    padding: 5px 7px;
+    transition: .5s;
+}
+form button:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: #fff;
+    border-color: #000000;
+}
+.container{
+    width: 100%;
+    background-color: #9a9ba0;
+    padding: 15px;
+}
+.container h2{
+    text-align: center;
+    font-size: 25px;
+}
+#resultCont{
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 10px;
+}
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+@media (max-width: 700px){
+    nav{
+        height: 70px;
+        padding: 0;
+    }
+    .icon{
+        display: block;
+        margin-right: 20px;
+        line-height: 70px;
+        font-weight: 600;
+    }
+    .logo{
+        line-height: 70px;
+        font-size: 29px;
+        font-weight: 600;
+    }
+    nav ul{
+        display: block;
+        position: absolute;
+        top: 69.9px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: #101359;
+        transition: all .7s ease;
+    }
+    nav ul li{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 17px;
+        padding: 0;
+    }
+}

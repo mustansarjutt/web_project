@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #ece9ec;
+}
+header .nav{
+    width: 100%;
+    background-color: #2f8d82;
+    color: #fff;
+}
+header .nav h2{
+    text-align: center;
+    font-size: 29px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    user-select: none;
+}
+.intro{
+    background-color: #80a090;
+    color: #fff;
+}
+.intro .intro-para{
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+.intro-para p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.projects{
+    background-color: #9e65a6;
+    width: 100%;
+    height: 80vh;
+}
+.projects .projects-part{
+    width: 90%;
+    margin: auto;
+}
+.project-one{
+    color: #fff;
+}
+.project-one h2{
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 20px 0 10px 0;
+}
+.project-one a{
+    text-decoration: none;
+    color: #fff;
+}
+.project-one a:hover{
+    color: #b5b1ab;
+    text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utils.css">
+    <style>
+        .btn{
+            background-color: rgb(161, 22, 22);
+            padding: 7px;
+            color: white;
+        }
+        .btn:hover{
+            background-color: rgb(137, 9, 9);
+            cursor: pointer;   
+        }
+    </style>
+    <title>Form</title>
+</head>
+<body class="bg-dark">
+    <div class="form-main-body">
+        <div class="form-apply_box bg-secondary">
+            <h2 class="text-center"><span class="bg-success p-10 b-r-7">Form</span></h2>
+            <form class="form-container" method="post" enctype="multipart/form-data">
+                <div class="form-control">
+                    <label for="name" class="label">Name</label>
+                    <input type="text" name="name" id="name" class="input" placeholder="Enter your name" required>
+                </div>
+                <div class="form-control">
+                    <label for="contact_number" class="label">Contact Number</label>
+                    <input type="number" name="contact_number" id="contact_number" class="input" placeholder="Enter your contact number" required>
+                </div>
+                <div class="form-control">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" name="email" id="email" class="input" placeholder="Enter your email" required>
+                </div>
+                <div class="form-control">
+                    <label for="country" class="label">Country</label>
+                    <input type="text" name="country" id="country" class="input" placeholder="Enter your country name" required>
+                </div>
+                <div class="text-area-con">
+                    <label for="note" class="label">Leave a note</label>
+                    <textarea name="note" id="note" rows="3" class="input-textarea" placeholder="Leave a note" required></textarea>
+                </div>
+                <div>
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
